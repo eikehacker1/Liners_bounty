@@ -14,3 +14,11 @@ subfinder -d hackerone.com | httpx  -o hosts
 echo "hackerone.com" | assetfinder | httprobe | tee -a hosts
 
 ```
+### status-code 
+```bash
+subfinder-d yahoo.com | httpx -status-code
+
+subfinder-d yahoo.com | httpx -status-code -mc 200
+
+subfinder-d yahoo.com | httpx -status-code -mc 300
+```
