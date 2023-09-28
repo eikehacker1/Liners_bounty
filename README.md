@@ -1,0 +1,2 @@
+# Liners_bounty
+UMA SÉRIE DE ONELINERS PARA BUG BOUNTY
