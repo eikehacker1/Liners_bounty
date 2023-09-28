@@ -10,6 +10,9 @@ UMA SÉRIE DE ONELINERS PARA BUG BOUNTY
 [HTTPROBE](https://github.com/tomnomnom/httprobe)
 
 [ASSETFINDER](https://github.com/tomnomnom/assetfinder)
+
+[ANEW](https://github.com/tomnomnom/anew)
+
 ### subdominios
 ```bash
  subfinder -d yahoo.com -o domains ; echo "yahoo.com" | assetfinder | tee -a domains ; wait ; cat domains | anew subs
