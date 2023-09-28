@@ -8,6 +8,7 @@ UMA SÉRIE DE ONELINERS PARA BUG BOUNTY
 [SUBFINDER](https://github.com/projectdiscovery/subfinder)
 
 [HTTPROBE](https://github.com/tomnomnom/httprobe)
+
 [ASSETFINDER](https://github.com/tomnomnom/assetfinder)
 ### subdominios
 ```bash
