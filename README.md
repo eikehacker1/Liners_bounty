@@ -13,6 +13,10 @@ UMA SÉRIE DE ONELINERS PARA BUG BOUNTY
 
 [ANEW](https://github.com/tomnomnom/anew)
 
+[waybackurls](https://github.com/tomnomnom/waybackurls)
+
+[FREQ](https://github.com/takshal/freq)
+
 ### subdominios
 ```bash
  subfinder -d yahoo.com -o domains ; echo "yahoo.com" | assetfinder | tee -a domains ; wait ; cat domains | anew subs
@@ -31,4 +35,9 @@ subfinder-d yahoo.com | httpx -status-code
 subfinder-d yahoo.com | httpx -status-code -mc 200
 
 subfinder-d yahoo.com | httpx -status-code -mc 300
+```
+### FIND XSS WITH FREQ AND QSREPLACE
+
+```bash
+echo "exemplo.com" | waybackurls | grep "=" | qsreplace "<script>alert(1)</script>"
 ```
