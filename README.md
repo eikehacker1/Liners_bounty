@@ -39,5 +39,5 @@ subfinder-d yahoo.com | httpx -status-code -mc 300
 ### FIND XSS WITH FREQ AND QSREPLACE
 
 ```bash
-echo "exemplo.com" | waybackurls | grep "=" | qsreplace "<script>alert(1)</script>"
+echo "exemplo.com" | waybackurls | grep "=" | qsreplace "<script>alert(1)</script>" | freq 
 ```
