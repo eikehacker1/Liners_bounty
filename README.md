@@ -43,7 +43,7 @@ subfinder-d yahoo.com | httpx -status-code -mc 300
 ```bash
 echo "exemplo.com" | waybackurls | grep "=" | qsreplace "<script>alert(1)</script>" | freq 
 ```
-### FINF WITH AIRIXSS
+### FIND WITH AIRIXSS
 
 ```bash
 echo "exemplo.com" | waybackurls | gf xss | qsreplace "<svg onload=alert(1)>" | Airixss -payload "alert(1)" | egrep -v "Not"
