@@ -18,6 +18,7 @@ UMA SÉRIE DE ONELINERS PARA BUG BOUNTY
 [FREQ](https://github.com/takshal/freq)
 
 [AIRIXSS](https://github.com/ferreiraklet/airixss)
+
 [GF](https://github.com/tomnomnom/gf)
 
 ### subdominios
